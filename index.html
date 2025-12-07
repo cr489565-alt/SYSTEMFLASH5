@@ -91,6 +91,15 @@ footer { width: 100%; padding: 5px 0; text-align: center; color: #fff; font-size
 </section>
 
 <style>
+.service-card {  position: relative; padding: 20px; border-radius: 15px; box-shadow: 0 4px 18px rgba(0,0,0,0.5); overflow: hidden; transition: 0.3s;}
+.service-card:hover { transform: translateY(-5px);}
+/* Cinta diagonal */
+.diagonal-text { position: absolute; top: 40%; left: -60px; width: 500px; background: #529d02; color: white;
+    padding: 6px 0; font-weight: bold; text-align: center; font-size: 16px; transform: rotate(-25deg); 
+    letter-spacing: 1px; text-transform: uppercase; box-shadow: 0 4px 15px #6faf09;}
+/* Icono principal */
+.icono { font-size: 40px; margin-bottom: 20px;}
+
 .inicio-hero { width: 98%; min-height: 0px; padding: 120px 20px;
  background:  linear-gradient(rgba(66, 63, 63, 0.65), rgba(63, 63, 63, 0.65)),
 url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80');
@@ -110,7 +119,9 @@ url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fi
 
         <div class="services">
       <!-- PÁGINAS WEB -->
-         <div class="service-card">
+        <div class="service-card diagonal-off">
+    <div class="diagonal-text">PRÓXIMAMENTE</div>
+
     <div class="icono">🌐</div>
     <h3>Creación de Páginas Web</h3>
     <p>En SYSTEM FLASH diseñamos y desarrollamos páginas web modernas, rápidas y totalmente personalizadas
@@ -119,24 +130,30 @@ url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fi
         navegación intuitiva y funciones avanzadas</p>
 </div>
 <!-- MANTENIMIENTO -->
-<div class="service-card">
+<div class="service-card diagonal-off">
+    <div class="diagonal-text">PRÓXIMAMENTE</div>
+
     <div class="icono">🔧</div>
     <h3>Mantenimiento</h3>
     <p>En SYSTEM FLASH ofrecemos servicios de mantenimiento preventivo y correctivo para 
        asegurar que tus equipos y sistemas funcionen siempre al máximo rendimiento.
        Nuestro objetivo es evitar fallas, prolongar la vida útil de tus dispositivos y garantizar un 
        funcionamiento estable y seguro.</p>
-</div>
+</div> 
 <!-- REPARACIONES -->
-<div class="service-card">
+<div class="service-card diagonal-off">
+    <div class="diagonal-text">PRÓXIMAMENTE</div>
+
     <div class="icono">🛠️</div>
     <h3>Reparaciones Tecnológicas</h3>
     <p>En SYSTEM FLASH ofrecemos soluciones rápidas y confiables para cualquier tipo de falla o daño
          en tus dispositivos. Contamos con técnicos especializados capaces de diagnosticar y reparar
-          equipos de cómputo, sistemas, puntos de venta, laptops, celulares y más.</p>
+         equipos de cómputo, sistemas, puntos de venta, laptops, celulares y más.</p>
 </div>
 <!-- PUNTOS DE VENTA -->
-<div class="service-card">
+<div class="service-card diagonal-off">
+    <div class="diagonal-text">PRÓXIMAMENTE</div>
+
     <div class="icono">💾</div>
     <h3>Puntos de Venta</h3>
     <p>En SYSTEM FLASH ofrecemos  desarrollo ,Creación personalizable a tus necesidades  para tu sistemas 
@@ -146,7 +163,9 @@ url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fi
            crecimiento .</p>
 </div>
 <!-- CAMARAS/SEGURIDAD -->
-<div class="service-card">
+<div class="service-card diagonal-off">
+    <div class="diagonal-text">PRÓXIMAMENTE</div>
+
     <div class="icono">📹</div>
     <h3>  Instalaciones  de Cámaras de Seguridad</h3>
     <p>En SYSTEM FLASH ofrecemos Protección para tu hogar o negocio con sistemas de videovigilancia de alta calidad. Instalamos cámaras con 
@@ -154,7 +173,9 @@ url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fi
           Garantizamos una instalación limpia, profesional y totalmente funcional. </p>
 </div>
 <!-- OPTIMIZACIÓN -->
-<div class="service-card">
+<div class="service-card diagonal-off">
+    <div class="diagonal-text">PRÓXIMAMENTE</div>
+
     <div class="icono">🚀</div>
     <h3>Optimización</h3>
     <p>En SYSTEM FLASH ofrecemos optimización  de tus computadoras, laptops. Eliminamos virus, corregimos errores,
@@ -162,7 +183,9 @@ url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fi
        técnico profesionales.</p> 
 </div>
 <!-- VENTA/COMPUTADORAS -->
-<div class="service-card">
+<div class="service-card diagonal-off">
+    <div class="diagonal-text">PRÓXIMAMENTE</div>
+
     <div class="icono">🖥️</div>
     <h3>Venta de Computadoras</h3>
     <p>En SYSTEM FLASH ofrecemos computadoras, revisadas por profesionales para que estén en las mejores condiciones,
@@ -170,7 +193,9 @@ url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fi
        También ensamblamos equipos para tu hogar, oficina, gaming o empresa.</p>
 </div> 
 <!-- ACCESORIOS -->
-<div class="service-card">
+<div class="service-card diagonal-off">
+    <div class="diagonal-text">PRÓXIMAMENTE</div>
+
     <div class="icono">🛒</div>
     <h3>Accesorios </h3>
     <p>En SYSTEM FLASH contamos con una amplia variedad de accesorios: teclados, mouses, bocinas, audífonos, cables,
