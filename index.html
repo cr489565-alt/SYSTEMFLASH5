@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SystemFlash-Los Reyes/Velocidad </title>
 </head>
 <style>
    :root {     --color-primario: #0a84ff; --color-secundario: #0ac5ff; --color-fondo: #f4f7fa; --color-oscuro: #1b1e23; --color-blanco: #ffffff; }
@@ -15,7 +15,7 @@ header h3 { margin: 5px 0 0; opacity: 0.8; font-size: 1rem;}
 .contacto { text-align: center;}
 .seccion { display: none;  animation: fade 0.4s ease;} .visible {display: block;}
 .seccion { width: 98%; padding: 10px; text-align: center; background: #f4f7fa; }
-.seccion h2 { font-size: 3.2rem; margin-bottom: 30px; color: #2c3e50; text-transform: uppercase; letter-spacing: 2px; font-weight: 800; }
+.seccion h2 { font-size: 3.2rem; margin-bottom: 30px; color: #fcfeff; text-transform: uppercase; letter-spacing: 2px; font-weight: 800; }
 .services { display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; }
 .service-card { width: 280px; background: white; padding: 25px 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; cursor: pointer; border-left: 6px solid #3498db; }
 .service-card:hover { transform: translateY(-8px) scale(1.03); box-shadow: 0 10px 20px rgba(0,0,0,0.15); border-left: 6px solid #1abc9c; }
@@ -67,6 +67,7 @@ footer { width: 100%; padding: 5px 0; text-align: center; color: #fff; font-size
 @keyframes fadeFooter { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); }}
 @keyframes glowMove { 0% { transform: translateX(-100%); }  100% { transform: translateX(100%); }}
 </style>
+
 <body>  
        <header>
         <h1>Servicios SYSTEM FLASH</h1>
@@ -84,6 +85,7 @@ footer { width: 100%; padding: 5px 0; text-align: center; color: #fff; font-size
     <section id="inicio" class="seccion visible inicio-hero">
   <div class="hero-content">
     <h2>Bienvenido a <span>System Flash</span></h2>
+    <h4 >LOS REYES DE LA VELOCIDAD</h4>
     <p>Tu solución rápida, segura y confiable en tecnología, sistemas y reparaciones.</p>
     
     <button class="btn-hero" onclick="mostrar('servicios')">Ver Servicios</button>
@@ -207,9 +209,9 @@ url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fi
 
    <!-- SOBRE NOSOTROS -->
      <section id="sobre_n" class="seccion">
-        <h2>Sobre Nosotros</h2>
+        <h2 style="color: black;">Sobre Nosotros</h2>
     <p class="intro">
-        En <strong>SystemFlash</strong> nos dedicamos a transformar negocios y personas mediante tecnología moderna, segura y totalmente personalizada. 
+        En <strong>SystemFlash</strong> nos dedicamos a transformar negocios y  ayudar a las personas mediante tecnología moderna, segura y totalmente personalizada. 
         Somos una empresa creada con el propósito de ofrecer soluciones reales, confiables y adaptadas a cada necesidad.
     </p>
 
@@ -279,12 +281,9 @@ url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fi
         </div>
     </div>
     </section>
-
-   
-
-  <style>
-    :root{ --bg:#0f1720; --card:#212328; --accent:#86cf00; --accent-2:#a4fe4f; --muted:#ffffff; 
-         --glass: rgba(255,255,255,0.04); --glass-2: rgba(253, 247, 247, 0.02); --radius: 14px;
+ <style>
+    :root{ --bg:#105aaf; --card:#003bd1; --accent:#86cf00; --accent-2:#a4fe4f; --muted:#ffffff; 
+         --glass: rgba(48, 52, 58, 0.616); --glass-2: rgba(69, 65, 65, 0.685); --radius: 14px;
            --shadow: 0 10px 30px rgba(254, 254, 254, 0.6);  font-family: Inter, ui-sans-serif, system-ui, -apple-system,
             "Segoe UI", Roboto, "Helvetica Neue", Arial;}
      a{color:inherit;text-decoration:none}
@@ -294,42 +293,29 @@ url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fi
     .intro-text{color:var(--muted);margin:0 0 22px 0;font-size:15px}
     .layout{display:grid;grid-template-columns:360px 1fr;gap:22px;align-items:start}
     /* INFO */
-    .contact-info{padding:18px;border-radius:12px;background:linear-gradient(180deg,var(--glass),var(--glass-2));border:1px solid rgba(255,255,255,0.03)}
+    .contact-info{  padding:18px;border-radius:12px;background:linear-gradient(180deg,var(--glass),var(--glass-2));border:1px solid rgba(255,255,255,0.03)}
     .contact-info p{margin:10px 0;color:#dbe9f8;font-size:15px}
     .contact-info strong{color:#fff}
     .contact-info p svg{vertical-align:middle;margin-right:8px;opacity:0.95}
      /* FORM */
-    .contact-form{display:flex;flex-direction:column;gap:12px;padding:18px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.015));border:1px solid rgba(255,255,255,0.03)}
-    .contact-form input,.contact-form select,.contact-form textarea{background:rgb(41, 40, 40);border:1px solid rgba(255,255,255,0.06);padding:12px 14px;border-radius:10px;color:#eaf6ff;outline:none;font-size:14px}
+    .contact-form{display:flex;flex-direction:column;gap:12px;padding:18px;border-radius:12px;background:linear-gradient(180deg, rgba(54, 52, 52, 0.587), rgba(255,255,255,0.015));border:1px solid rgba(255,255,255,0.03)}
+    .contact-form input,.contact-form select,.contact-form textarea{background:rgba(63, 64, 65);border:1px solid rgba(255,255,255,0.06);padding:12px 14px;border-radius:10px;color:#eaf6ff;outline:none;font-size:14px}
     .contact-form input::placeholder,.contact-form textarea::placeholder{color:rgba(230,238,246,0.45)}
     .contact-form textarea{min-height:120px;resize:vertical}
-    .hidden{display:none}
-    .btn-enviar{display:inline-block;padding:12px 16px;border-radius:12px;border:none;cursor:pointer;font-weight:600;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#001322;box-shadow:0 8px 24px rgba(125, 186, 2, 0.12);transition:transform .16s ease, box-shadow .16s ease}
-    .btn-enviar:active{transform:translateY(1px)}
-   .contact-buttons a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 45px;
-  height: 45px;
-  margin: 6px;
-  background: #f7f7f7;
-  border-radius: 10px;
-  transition: 0.3s;
-}
-
-.contact-buttons a:hover {
-  transform: scale(1.12);
-  background: #f7f7f7;
-}
-
-.contact-buttons .icon {
-  width: 30px;
-  height: 30px;
-}
+    .hidden { display: none; }
+.contact-form select,
+.contact-form input,
+.contact-form textarea { width: 100%; padding: 12px; margin-top: 10px; border-radius: 8px; background: #073d8d;
+   border: 1px solid #2f3e4d; color: #fff;}
+.btn-enviar {  padding: 12px 20px; background: #1d9bf0; border: none; border-radius: 8px; color: #fff; cursor: pointer;}
+.btn-enviar:hover { background: #1486d0;}
+.contact-buttons a { display: inline-flex; justify-content: center; align-items: center; width: 60px; 
+   height: 60px; margin: 6px;  background: #f7f7f7;  border-radius: 10px; transition: 0.3s;}
+.contact-buttons a:hover { transform: scale(1.12); background: #f7f7f7;}
+.contact-buttons .icon { width: 50px; height: 50px;}
 
   </style>
-
+   
   <section id="contacto" class="seccion contacto-section" aria-labelledby="titulo-contacto">
     <h2 id="titulo-contacto" class="titulo-contacto">Contacto</h2>
     <p class="intro-text">En <strong>SYSTEM FLASH</strong> estamos listos para ayudarte con cualquier duda, soporte o contratación de servicios.</p>
@@ -344,64 +330,82 @@ url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fi
         <p><strong>📍 Atención al Cliente:</strong> En línea – México</p>
         <p><strong>🕒 Horario:</strong> Lunes a Sábado, 9:00 AM – 8:00 PM</p>
 
-        <div style="margin-top:14px" class="muted">¿Prefieres mensajería instantánea? Haz clic en WhatsApp para iniciar una conversación inmediata.</div>
+        <div style="margin-top:14px; color: white;" class="muted">¿Prefieres mensajería instantánea? Haz clic en WhatsApp para iniciar una conversación inmediata.</div>
       </aside>
 
       <!-- FORM -->
       <form class="contact-form" id="main-contact-form" aria-label="Formulario de contacto">
+        <h3 style="color: #dbe9f8; margin: 1px;">Formulario de Contacto</h3>
+        <h4 style="color: #dbe9f8; margin: 1px;">Por favor, completa el siguiente formulario para contactarte y poderte brindar la  mejor atención.</h4>
 
-        <input type="text" name="nombre" placeholder="Tu nombre" required class="focus-ring" />
-        <input type="email" name="correo" placeholder="Tu correo" required class="focus-ring" />
+        <input type="text" name="nombre" placeholder="Nombre completo" required class="focus-ring" />
+        <input type="telefono" name=" Tu Numero" placeholder="Numero telefonico o correo electrónico" required class="focus-ring" />
 
-        <select name="tipo" id="tipo" required class="focus-ring" aria-controls="problema servicio">
-            <option value="">¿Qué necesitas?</option>
-            <option value="soporte">Soporte</option>
-            <option value="contratacion">Atención a Clientes</option>
-            <option value="reparacion">Reparación</option>
-        </select>
+          <!-- Selección de tipo de servicio -->
+  <select name="tipo" id="tipo" required class="focus-ring">
+    <option value="">¡ Selecciona tu servicio !</option>
+    <option value="soporte">Soporte Técnico</option>
+    <option value="informes">Informes y Atención a Clientes</option>
+    <option value="desarrollo">Desarrollo para tu negocio</option>
+  </select>
 
-        <select name="problema" id="problema" class="hidden focus-ring" aria-hidden="true">
-            <option value="">Selecciona tu problema</option>
-            <option value="pc_lenta">La computadora está lenta</option>
-            <option value="virus">Virus o malware</option>
-            <option value="red">Problemas de red</option>
-            <option value="pantalla">Pantalla dañada</option>
-            <option value="disco">Disco duro fallando</option>
-        </select>
+  <!-- Lista Soporte Técnico -->
+  <select name="problema" id="problema" class="hidden focus-ring">
+    <option value="">¡ Selecciona tu problema !</option>
+    <option value="pc_lenta">La computadora está lenta</option>
+    <option value="virus">Virus o malware</option>
+    <option value="red">Problemas de red</option>
+    <option value="pantalla">Pantalla dañada</option>
+    <option value="disco">Disco duro fallando</option>
+    <option value="otros">Otros (especifica el problema en el mensaje)</option>
+  </select>
 
-        <select name="servicio" id="servicio" class="hidden focus-ring" aria-hidden="true">
-            <option value="">Selecciona el servicio</option>
-            <option value="paginas_web">Páginas Web</option>
-            <option value="mantenimiento">Mantenimiento</option>
-            <option value="soporte_tecnico">Soporte Técnico</option>
-            <option value="punto_venta">Puntos de Venta</option>
-            <option value="punto_venta_privado">Puntos de Venta Privados</option>
-            <option value="tecnico_redes">Técnico en Redes</option>
-            <option value="antivirus">Antivirus</option>
-            <option value="camaras_seguridad">Instalador de Cámaras de Seguridad</option>
-            <option value="optimizacion">Optimización</option>
-        </select>
+  <!-- Lista Informes y Atención a Clientes -->
+  <select name="informacion" id="informacion" class="hidden focus-ring">
+    <option value="">¡ Selecciona una opción !</option>
+    <option value="precios">Precios</option>
+    <option value="cotizaciones">Cotizaciones</option>
+    <option value="detalles">Mas Detalles de los servicios</option>
+  </select>
 
-        <textarea name="mensaje" placeholder="Detalles adicionales..." required class="focus-ring"></textarea>
+  <!-- Lista Desarrollo para tu negocio -->
+  <select name="servicios_desarrollo" id="servicios_desarrollo" class="hidden focus-ring">
+    <option value="">¡ Selecciona tu servicio !</option>
+    <option value="paginas_web">Páginas Web</option>
+    <option value="puntos_venta">Puntos de Venta</option>
+    <option value="camaras_seguridad">Cámaras de Seguridad</option>
+    <option value="sistemas_personalizados">personalizaciones</option>
+  </select>
+<h3 style="color: #dbe9f8; margin: 1%;">Especificaciones</h3>
+        <textarea name="mensaje" placeholder="Especifica detalladamente el problema...El mensaje se guarda para dar seguimiento del problema y poder brindarte un mejor servicio y atención." required class="focus-ring"></textarea>
 
-        <div style="display:flex;gap:12px;align-items:center">
-          <button type="submit" class="btn-enviar">Enviar</button>
-          <div class="muted" style="font-size:13px">O envíanos un <a href="https://wa.me/5215610716110" target="_blank">mensaje por WhatsApp</a></div>
-        </div>
+          <button type="submit"  class="btn-enviar" style="background:#0933b0;">
+    enviar
+  </button>
+
+  <!-- BOTÓN DE WHATSAPP -->
+  <button type="button" id="btn-whatsapp" class="btn-enviar" style="background:#25D366;">
+    WhatsApp
+  </button>
+
+  <div class="muted" style="font-size:13px; color: white;">
+    O envíanos un <a href="https://wa.me/5215610716110" target="_blank">mensaje por WhatsApp</a>
+  </div>
+</div>
 
       </form>
 
     </div>
  <div class="contact-buttons" style="margin-top:18px">
-  <a href="https://wa.me/5215610716110" class="whatsapp social-ico" target="_blank" >
+   <a href="https://wa.me/5215610716110" class="whatsapp social-ico" target="_blank" >
     <img src="social.png" alt="" class="icon">
   </a>
 
-  <a href="#" class="facebook social-ico" target="_blank" >
+  <a href="https://www.facebook.com/share/1aptA9JXpV/" class="facebook social-ico" target="_blank" >
     <img src="facebook.png" class="icon">
   </a>
 
-  <a href="#" class="instagram social-ico" target="_blank" >
+  <a href="https://www.instagram.com/systemflash_05?igsh=MXdxbGs1OWh3ejBubw==" class="instagram social-ico" target="_blank" >
     <img src="instagram.png"  class="icon">
   </a>
 </div>
@@ -409,58 +413,6 @@ url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fi
   </section>
 
   <script>
-    // Interactividad: mostrar/ocultar selects según tipo
-    (function(){
-      const tipo = document.getElementById('tipo');
-      const problema = document.getElementById('problema');
-      const servicio = document.getElementById('servicio');
-
-      function updateFields(){
-        const v = tipo.value;
-        if(v === 'soporte' || v === 'reparacion'){
-          problema.classList.remove('hidden'); problema.setAttribute('aria-hidden','false');
-          servicio.classList.add('hidden'); servicio.setAttribute('aria-hidden','true');
-        } else if (v === 'contratacion'){
-          servicio.classList.remove('hidden'); servicio.setAttribute('aria-hidden','false');
-          problema.classList.add('hidden'); problema.setAttribute('aria-hidden','true');
-        } else {
-          problema.classList.add('hidden'); problema.setAttribute('aria-hidden','true');
-          servicio.classList.add('hidden'); servicio.setAttribute('aria-hidden','true');
-        }
-      }
-
-      tipo.addEventListener('change', updateFields);
-      // quick accessible focus styling: add focus class to selects/inputs on keyboard nav
-      document.querySelectorAll('.focus-ring').forEach(el=>{
-        el.addEventListener('keydown', (e)=>{
-          if(e.key === 'Tab') el.style.boxShadow = '0 0 0 4px rgba(79,172,254,0.06)';
-        });
-        el.addEventListener('blur', ()=> el.style.boxShadow = '');
-      });
-
-      // Example: handle submit (replace with your backend endpoint)
-      document.getElementById('main-contact-form').addEventListener('submit', function(e){
-        e.preventDefault();
-        const data = new FormData(this);
-        // Simple UI feedback
-        const btn = this.querySelector('.btn-enviar');
-        btn.disabled = true; btn.textContent = 'Enviando...';
-
-        // Simular envío (aquí conecta tu API)
-        setTimeout(()=>{
-          alert('Gracias, tu mensaje fue recibido. Nos comunicaremos pronto.');
-          btn.disabled = false; btn.textContent = 'Enviar';
-          this.reset();
-          updateFields();
-        }, 700);
-      });
-
-    })();
-  </script>
-
-
-
-<script> 
 function mostrar(id) {
     // Oculta todas
     document.querySelectorAll(".seccion").forEach(function(sec) { sec.classList.remove("visible"); });
@@ -475,7 +427,159 @@ function mostrar(id) {
         servicio.classList.add("hidden");
         if (tipo.value === "soporte" || tipo.value === "reparacion") { problema.classList.remove("hidden"); }
         if (tipo.value === "contratacion") { servicio.classList.remove("hidden"); }});
-</script>
+
+
+        
+
+(function(){
+
+  const tipo = document.getElementById('tipo');
+  const problema = document.getElementById('problema');
+  const informacion = document.getElementById('informacion');
+  const servicios_desarrollo = document.getElementById('servicios_desarrollo');
+  const form = document.getElementById('main-contact-form');
+
+  function updateFields(){
+    const v = tipo.value;
+
+    problema.classList.add('hidden');
+    informacion.classList.add('hidden');
+    servicios_desarrollo.classList.add('hidden');
+
+    if(v === 'soporte'){
+      problema.classList.remove('hidden');
+    }
+    else if(v === 'informes'){
+      informacion.classList.remove('hidden');
+    }
+    else if(v === 'desarrollo'){
+      servicios_desarrollo.classList.remove('hidden');
+    }
+  }
+
+  tipo.addEventListener('change', updateFields);
+
+
+
+  /* ============================================================
+        FUNCIÓN DE VALIDACIÓN PARA AMBOS BOTONES
+  ============================================================ */
+  function validarFormulario() {
+
+    const nombre = document.querySelector('input[name="nombre"]').value.trim();
+    const numero = document.querySelector('input[name=" Tu Numero"]').value.trim();
+    const servicio = tipo.value;
+    const mensaje = document.querySelector('textarea[name="mensaje"]').value.trim();
+
+    let detalle = "";
+
+    if(servicio === "soporte"){
+      detalle = problema.value;
+    } 
+    else if(servicio === "informes"){
+      detalle = informacion.value;
+    } 
+    else if(servicio === "desarrollo"){
+      detalle = servicios_desarrollo.value;
+    }
+
+    /* ---- VALIDACIÓN ---- */
+    if(!nombre){
+      alert("⚠️ Debes ingresar tu nombre.");
+      return false;
+    }
+
+    if(!numero){
+      alert("⚠️ Debes ingresar tu número o correo.");
+      return false;
+    }
+
+    if(!servicio){
+      alert("⚠️ Debes seleccionar un tipo de servicio.");
+      return false;
+    }
+
+    if(detalle === ""){
+      alert("⚠️ Debes seleccionar una opción del servicio.");
+      return false;
+    }
+
+    if(!mensaje){
+      alert("⚠️ Debes escribir el mensaje o descripción.");
+      return false;
+    }
+
+    return {
+      nombre,
+      numero,
+      servicio,
+      detalle,
+      mensaje
+    };
+  }
+
+
+
+
+  /* ============================================================
+        BOTÓN "ENVIAR" NORMAL (BLOQUEADO SI FALTA ALGO)
+  ============================================================ */
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+
+    const datos = validarFormulario();
+    if(!datos) return; // si hay algo vacío → NO SE MANDA
+
+    const btn = this.querySelector('.btn-enviar');
+    btn.disabled = true;
+    btn.textContent = "Enviando...";
+
+    setTimeout(()=>{
+      alert(`✔ Tu mensaje fue enviado correctamente ✔ \nGracias ${datos.nombre} por comunicarte con SYSTEM FLASH.\n 📞 NOS ESTAREMOS PONIENDO EN CONTACTO  A LA BREVEDAD.📞 `);
+      btn.disabled = false;
+      btn.textContent = "Enviar";
+      this.reset();
+      updateFields();
+    }, 700);
+  });
+
+
+
+
+  /* ============================================================
+        BOTÓN WHATSAPP (BLOQUEADO SI FALTA ALGO)
+  ============================================================ */
+  document.getElementById("btn-whatsapp").addEventListener("click", function () {
+
+    const datos = validarFormulario();
+    if(!datos) return; // si hay algo vacío → NO SE MANDA
+
+    const texto = 
+`*Nuevo mensaje de ${datos.nombre} – SYSTEM FLASH* 🚀
+
+👤 *Nombre:* ${datos.nombre}
+📱 *Contacto:* ${datos.numero}
+
+🛠 *Servicio:* ${datos.servicio}
+📌 *Detalle:* ${datos.detalle}
+
+📝 *Mensaje:* 
+${datos.mensaje}
+`;
+
+    const url = "https://wa.me/5215610716110?text=" + encodeURIComponent(texto);
+    window.open(url, "_blank");
+
+    setTimeout(() => {
+      form.reset();
+      updateFields();
+      alert("☑️ Enviado correctamente por WhatsApp ☑️\nGracias " + datos.nombre + " por comunicarte con SYSTEM FLASH. \n📞 NOS ESTAREMOS PONIENDO EN CONTACTO  A LA BREVEDAD.📞 ");
+    }, 30);
+
+  });
+
+})();
+</script> 
 
  <footer>  © 2025  SYSTEM FLASH  — Innovación sin límites </footer>
 </body>
