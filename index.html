@@ -8,57 +8,49 @@
 <style>
    :root {     --color-primario: #0a84ff; --color-secundario: #0ac5ff; --color-fondo: #f4f7fa; --color-oscuro: #1b1e23; --color-blanco: #ffffff; }
 body { margin: 0;font-family: "Segoe UI", sans-serif; background: var(--color-fondo); color: #333; }
-header { background: linear-gradient(90deg, #000000, #0a84ff); color: white; padding: 18px 1px; text-align: center; position: fixed; top: 0; left: 0;   width:100%; z-index: 1000; box-shadow: 0 4px 2px rgba(0,0,0,0.3);}
-header h1 { margin: 0; font-size: 2rem; letter-spacing: 2px; font-weight: 800; }
-header h3 { margin: 5px 0 0; opacity: 0.8; font-size: 1rem;}
-.contenedor {  width: 99%; margin-top:170px; padding: 1px; background: #f0f0f0; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-.contacto { text-align: center;}
+/* seccion */
 .seccion { display: none;  animation: fade 0.4s ease;} .visible {display: block;}
 .seccion { width: 98%; padding: 10px; text-align: center; background: #f4f7fa; }
 .seccion h2 { font-size: 3.2rem; margin-bottom: 30px; color: #fcfeff; text-transform: uppercase; letter-spacing: 2px; font-weight: 800; }
+/* servicios */
+.icono { font-size: 40px; margin-bottom: 20px;}
 .services { display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; }
 .service-card { width: 280px; background: white; padding: 25px 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; cursor: pointer; border-left: 6px solid #3498db; }
 .service-card:hover { transform: translateY(-8px) scale(1.03); box-shadow: 0 10px 20px rgba(0,0,0,0.15); border-left: 6px solid #1abc9c; }
 .service-card h3 { font-size: 1.4rem; color: #2c3e50; margin-bottom: 10px;}
 .service-card p { font-size: 0.95rem; color: #555; line-height: 1.4;}
+/* Cinta diagonal */
+.diagonal-text { position: absolute; top: 40%; left: -60px; width: 500px; background: #529d02; color: white;
+    padding: 6px 0; font-weight: bold; text-align: center; font-size: 16px; transform: rotate(-25deg); 
+    letter-spacing: 1px; text-transform: uppercase; box-shadow: 0 4px 15px #6faf09;}
+/* contacto */
 .contact-section { padding: 60px 20px; text-align: center; background: #f5f7fa;}
-.contact-section h2 { font-size: 2.3rem; margin-bottom: 15px; color: #2c3e50; text-transform: uppercase; font-weight: 800;}
-.intro-text { max-width: 600px; margin: 0 auto 30px; font-size: 1.1rem; color: #555; }
-.contact-info p { font-size: 1rem; color: #2c3e50 ;margin: 5px 0;}
-.contact-form { max-width: 800px; margin: 30px auto; display: flex; flex-direction: column; gap: 15px;}
-.contact-form input,.contact-form textarea { padding: 12px; border: 2px solid #ddd; border-radius: 8px; font-size: 1rem; outline: none;}
-.contact-form input:focus,.contact-form textarea:focus { border-color: #3498db;}
-.contact-form button {  padding: 12px;  border: none;  background: #3498db; color: white; font-size: 1.1rem;  border-radius: 8px;  cursor: pointer;  transition: 0.3s;}
-.contact-form button:hover {  background: #1abc9c;  transform: scale(1.05);}
-.contact-buttons {   margin-top: 30px;  display: flex;  justify-content: center;  gap: 15px;}
-.contact-buttons a { padding: 10px 20px; border-radius: 8px; color: white;  font-weight: bold; text-decoration: none; transition: 0.3s;}
-.whatsapp { background: #25D366;}
-.facebook { background: #1877F2;}
-.instagram { background: #E4405F;}
-.contact-buttons a:hover { transform: translateY(-5px);}
-.contact-form select { padding: 12px; border: 2px solid #ddd; border-radius: 8px;  font-size: 1rem; outline: none;}
-.contact-form select:focus {  border-color: #3498db;}
-.hidden {  display: none;}
+.contact-section h2 { font-size: 2.3rem; margin-bottom: 15px; color: #2c3e50; text-transform: uppercase; font-weight: 600;}
+/* sobre nosotros */
 .sobre-nosotros { padding: 50px 20px; max-width: 1100px; margin: auto;  text-align: center;}
 .sobre-nosotros h2 { font-size: 2.5rem; margin-bottom: 20px;}
 .sobre-nosotros .intro {  max-width: 900px;  margin: 0 auto 40px auto;  font-size: 1.1rem;  line-height: 1.7;}
+/* contenedor de columnas  */
+.subtitle { font-size: 1.4rem; margin-bottom: 10px; font-weight: bold; color: #0a84ff;}
 .columns { display: flex; gap: 30px;  margin-bottom: 40px; flex-wrap: wrap;}
 .column { flex: 1; min-width: 300px; background: #ffffff;  padding: 25px;  border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); text-align: left;}
-.subtitle { font-size: 1.4rem; margin-bottom: 10px; font-weight: bold; color: #0a84ff;}
+/* contenedor de tarjetas */
 .cards-container {  display: grid;  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-top: 40px;}
 .card { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);  text-align: left; transition: transform 0.3s;}
 .card:hover { transform: translateY(-5px);}
 .card-header {  font-size: 1.6rem; margin-bottom: 15px; font-weight: bold; color: #0077ff;}
-.contadores { margin-top: 50px; display: flex;  justify-content: center;  gap: 40px; flex-wrap: wrap;}
+.contadores { margin-top: 50px; display: flex;  justify-content: center;  gap: 40px; flex-wrap: wrap;} 
 .contador-box { width: 150px; text-align: center;}
-.numero { font-size: 2.5rem; font-weight: bold;  color: #007aff;}
-.icono  { font-size: 50px; margin-bottom: 10px; color: cyan; }
+/* Icono principal */
+.icono { font-size: 40px; margin-bottom: 20px;}
+/* menu inicio */
 .menu-tech { background: rgba(165, 162, 162, 0.8); backdrop-filter: blur(10px);  position: fixed; top: 100px; width: 100%;
      padding: 15px; display: flex; justify-content: center; gap: 5px; z-index: 999; box-shadow: 0 4px 2px rgba(134, 126, 126, 0.15);
       border-bottom: 2px solid rgba(0, 140, 255, 0.2);}
 .btn-nav { padding: 4px 22px; border-radius: 12px;  background: linear-gradient(135deg, #007bff, #09acda); color: white; border: none; font-size: 1rem; cursor: pointer; font-weight: 800; transition: 0.25s ease; box-shadow: 0 4px 1px rgba(252, 254, 255, 0.4);}
 .btn-nav:hover { transform: translateY(-3px) scale(1.05); box-shadow: 0 1px 1px rgba(0, 140, 255, 0.6); background: linear-gradient(135deg, #005eff, #0d97a9);}
-.btn-nav:active { transform: scale(0.97);}
+.btn-nav:active { transform: scale(0.97);}  
+/* pie de ppagina */
 footer { width: 100%; padding: 5px 0; text-align: center; color: #fff; font-size: 16px; letter-spacing: 1px;
     background: linear-gradient(90deg, #000000, #0a84ff ); border-top: 2px solid rgb(255, 255, 255);
      margin-top: 1px; box-shadow: 0 -5px 15px rgb(255, 255, 255); position: relative; z-index: 10;
@@ -66,42 +58,8 @@ footer { width: 100%; padding: 5px 0; text-align: center; color: #fff; font-size
 /* Animación de entrada */
 @keyframes fadeFooter { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); }}
 @keyframes glowMove { 0% { transform: translateX(-100%); }  100% { transform: translateX(100%); }}
-</style>
 
-<body>  
-       <header>
-        <h1 >Servicios SYSTEM FLASH</h1>
-        <h3>Tu solución rápida, segura y confiable</h3>
-    </header>
-
-<nav class="menu-tech">
-  <button class="btn-nav" onclick="mostrar('inicio')">Inicio</button>
-  <button class="btn-nav" onclick="mostrar('sobre_n')">Sobre Nosotros</button>
-  <button class="btn-nav" onclick="mostrar('contacto')">Contacto</button>
-</nav>
-    
-<!-- INICIO -->
-<div class="contenedor">
-    <section id="inicio" class="seccion visible inicio-hero">
-  <div class="hero-content">
-    <h2>Bienvenido a <span>System Flash</span></h2>
-    <h4 >LOS REYES DE LA VELOCIDAD</h4>
-    <p>Tu solución rápida, segura y confiable en tecnología, sistemas y reparaciones.</p>
-    
-    <button class="btn-hero" onclick="mostrar('servicios')">Ver Servicios</button>
-  </div>
-</section>
-
-<style>
-.service-card {  position: relative; padding: 20px; border-radius: 15px; box-shadow: 0 4px 18px rgba(0,0,0,0.5); overflow: hidden; transition: 0.3s;}
-.service-card:hover { transform: translateY(-5px);}
-/* Cinta diagonal */
-.diagonal-text { position: absolute; top: 40%; left: -60px; width: 500px; background: #529d02; color: white;
-    padding: 6px 0; font-weight: bold; text-align: center; font-size: 16px; transform: rotate(-25deg); 
-    letter-spacing: 1px; text-transform: uppercase; box-shadow: 0 4px 15px #6faf09;}
-/* Icono principal */
-.icono { font-size: 40px; margin-bottom: 20px;}
-
+  /* inicio */
 .inicio-hero { width: 98%; min-height: 0px; padding: 120px 20px;
  background:  linear-gradient(rgba(66, 63, 63, 0.65), rgba(63, 63, 63, 0.65)),
 url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80');
@@ -113,7 +71,66 @@ url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fi
 .hero-content p { font-size: 1.3rem; margin-top: 15px; opacity: 0.9;}
 .btn-hero { margin-top: 25px; padding: 14px 32px; background: linear-gradient(135deg, #007bff, #00d4ff); border: none; color: white; font-size: 1.2rem; font-weight: 800; border-radius: 12px; cursor: pointer; transition: 0.3s; box-shadow: 0 5px 20px rgba(0,150,255,0.5);}
 .btn-hero:hover { transform: translateY(-4px); box-shadow: 0 8px 25px rgba(0,150,255,0.7); background: linear-gradient(135deg, #0068ff, #05f7ff);}
+header { background: linear-gradient(90deg, #000000, #0a84ff); color: white; padding: 18px 1px; text-align: center; position: fixed; top: 0; left: 0;   width:100%; z-index: 1000; box-shadow: 0 4px 2px rgba(0,0,0,0.3);}
+header h1 { margin: 0; font-size: 2rem; letter-spacing: 2px; font-weight: 800; }
+header h3 { margin: 5px 0 0; opacity: 0.8; font-size: 1rem;}
+.contenedor {  width: 99%; margin-top:170px; padding: 1px; background: #f0f0f0; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+     /* modal contacoto */ 
+   :root{ --bg:#105aaf; --card:#003bd1; --accent:#86cf00; --accent-2:#a4fe4f; --muted:#ffffff; 
+         --glass: rgba(48, 52, 58, 0.616); --glass-2: rgba(69, 65, 65, 0.685); --radius: 14px;
+           --shadow: 0 10px 30px rgba(254, 254, 254, 0.6);  font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+            "Segoe UI", Roboto, "Helvetica Neue", Arial;}
+    /* informacion */ 
+    .contacto-section{ justify-content: center; width:1000px; margin:10px; padding: 10px; border-radius:18px; background:linear-gradient(135deg,var(--card), rgba(11,18,32,0.65));box-shadow:var(--shadow);backdrop-filter: blur(6px);}
+    .titulo-contacto{ color: #dbe9f8; font-size:10px; margin:10px; display:flex; align-items:center; gap:1px;}
+     .titulo-contacto::before{content:""; margin: 5px; width:12px;height:12px;border-radius:3px;background:linear-gradient(90deg,var(--accent),var(--accent-2));box-shadow:0 6px 18px rgb(105, 111, 114)}.layout{display:grid; grid-template-columns:370px 1fr;gap:0px; align-items:start}
+    .contact-info{ margin: 7%; padding:18px; border-radius:12px; background:linear-gradient(180deg,var(--glass),var(--glass-2));border:1px solid rgba(255,255,255,0.03)}
+    .contact-info p{margin:1px;color:#dbe9f8;font-size:15px;}
+    .contact-info strong{color:#fff}
+    .contact-info p svg{vertical-align:middle; margin-right:1px; opacity:0.95}
+         /* formulario*/
+    .contact-form{display:flex; flex-direction:column; gap:10px; padding:5px; border-radius:12px;background:linear-gradient(180deg, rgba(54, 52, 52, 0.587), rgba(255,255,255,0.015));border:1px solid rgba(255,255,255,0.03)}
+    .contact-form input,.contact-form select,.contact-form textarea{background:rgb(236, 241, 245); border:1px solid rgba(255,255,255,0.06); padding: 10px; border-radius:10px; color:#eaf6ff; outline:none; font-size:15px}
+    .contact-form input::placeholder,.contact-form textarea::placeholder{color:rgba(209, 211, 212, 0.916)}
+    .contact-form textarea{height:90px; resize:vertical}
+    .hidden { display: none; }
+.contact-form select,.contact-form input,.contact-form textarea { width: 600px; padding: 8px; margin: 5px; border-radius: 8px; background:  #1486d0;
+   border: 1px solid #ffffff00; color: #ffffff;}
+   /* botones enviar */
+.btn-enviar { width: 600px; padding: 10px ; margin: 5px; background: #1d9bf0; border: none; border-radius: 8px; color: #fff; cursor: pointer;}
+.btn-enviar:hover { background: #070808;}
+ /* redes sociales */
+.contact-buttons a { display: inline-flex; justify-content: center; align-items: center;  width: 40px;
+   height: 40px; margin: 5px;  background: #a7a5a5;  border-radius: 10px; transition: 0.3s;}
+.contact-buttons a:hover { transform: scale(1.12); background: #f7f7f7;}
+.contact-buttons .icon { width: 30px; height: 30px;}
+
 </style>
+
+<body> 
+   <!-- INICIO -->
+       <header>
+        <h1 >Servicios SYSTEM FLASH</h1>
+        <h3>Tu solución rápida, segura y confiable</h3>
+    </header>
+
+<nav class="menu-tech">
+  <button class="btn-nav" onclick="mostrar('inicio')">Inicio</button>
+  <button class="btn-nav" onclick="mostrar('sobre_n')">Sobre Nosotros</button>
+  <button class="btn-nav" onclick="mostrar('contacto')">Contacto</button>
+</nav>
+    
+
+<div class="contenedor">
+    <section id="inicio" class="seccion visible inicio-hero">
+  <div class="hero-content">
+    <h2>Bienvenido a <span>System Flash</span></h2>
+    <h4 >LOS REYES DE LA VELOCIDAD</h4>
+    <p>Tu solución rápida, segura y confiable en tecnología, sistemas y reparaciones.</p>
+    
+    <button class="btn-hero" onclick="mostrar('servicios')">Ver Servicios</button>
+  </div>
+</section>
 
 <!-- SERVICIOS -->
     <section id="servicios" class="seccion">
@@ -281,44 +298,12 @@ url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fi
         </div>
     </div>
     </section>
- <style>
-    :root{ --bg:#105aaf; --card:#003bd1; --accent:#86cf00; --accent-2:#a4fe4f; --muted:#ffffff; 
-         --glass: rgba(48, 52, 58, 0.616); --glass-2: rgba(69, 65, 65, 0.685); --radius: 14px;
-           --shadow: 0 10px 30px rgba(254, 254, 254, 0.6);  font-family: Inter, ui-sans-serif, system-ui, -apple-system,
-            "Segoe UI", Roboto, "Helvetica Neue", Arial;}
-     a{color:inherit;text-decoration:none}
-    .contacto-section{max-width:1100px;margin:48px auto;padding:28px;border-radius:18px;background:linear-gradient(135deg,var(--card), rgba(11,18,32,0.65));box-shadow:var(--shadow);backdrop-filter: blur(6px);}
-    .titulo-contacto{ color: #dbe9f8; font-size:28px;margin:0 0 6px 0;display:flex;align-items:center;gap:12px}
-    .titulo-contacto::before{content:"";width:12px;height:12px;border-radius:3px;background:linear-gradient(90deg,var(--accent),var(--accent-2));box-shadow:0 6px 18px rgb(105, 111, 114)}
-    .intro-text{color:var(--muted);margin:0 0 22px 0;font-size:15px}
-    .layout{display:grid;grid-template-columns:360px 1fr;gap:22px;align-items:start}
-    /* INFO */
-    .contact-info{  padding:18px;border-radius:12px;background:linear-gradient(180deg,var(--glass),var(--glass-2));border:1px solid rgba(255,255,255,0.03)}
-    .contact-info p{margin:10px 0;color:#dbe9f8;font-size:15px}
-    .contact-info strong{color:#fff}
-    .contact-info p svg{vertical-align:middle;margin-right:8px;opacity:0.95}
-     /* FORM */
-    .contact-form{display:flex;flex-direction:column;gap:12px;padding:18px;border-radius:12px;background:linear-gradient(180deg, rgba(54, 52, 52, 0.587), rgba(255,255,255,0.015));border:1px solid rgba(255,255,255,0.03)}
-    .contact-form input,.contact-form select,.contact-form textarea{background:rgba(63, 64, 65);border:1px solid rgba(255,255,255,0.06);padding:12px 14px;border-radius:10px;color:#eaf6ff;outline:none;font-size:14px}
-    .contact-form input::placeholder,.contact-form textarea::placeholder{color:rgba(230,238,246,0.45)}
-    .contact-form textarea{min-height:120px;resize:vertical}
-    .hidden { display: none; }
-.contact-form select,
-.contact-form input,
-.contact-form textarea { width: 100%; padding: 12px; margin-top: 10px; border-radius: 8px; background: #073d8d;
-   border: 1px solid #2f3e4d; color: #fff;}
-.btn-enviar {  padding: 12px 20px; background: #1d9bf0; border: none; border-radius: 8px; color: #fff; cursor: pointer;}
-.btn-enviar:hover { background: #1486d0;}
-.contact-buttons a { display: inline-flex; justify-content: center; align-items: center; width: 60px; 
-   height: 60px; margin: 6px;  background: #f7f7f7;  border-radius: 10px; transition: 0.3s;}
-.contact-buttons a:hover { transform: scale(1.12); background: #f7f7f7;}
-.contact-buttons .icon { width: 50px; height: 50px;}
 
-  </style>
-   
+    <!--CONTACTO -->
+    <center>
   <section id="contacto" class="seccion contacto-section" aria-labelledby="titulo-contacto">
-    <h2 id="titulo-contacto" class="titulo-contacto">Contacto</h2>
-    <p class="intro-text">En <strong>SYSTEM FLASH</strong> estamos listos para ayudarte con cualquier duda, soporte o contratación de servicios.</p>
+    <h2 id="titulo-contacto" class="titulo-contacto" style="font-size: 30px;">REGISTRATE</h2>
+    <p class="intro-text " style="color: #eeeaeabb;">En <a  style="color: #ffffff;">SYSTEM FLASH</a> estamos listos para ayudarte con cualquier duda, soporte o contratación de servicios.</p>
 
     <div class="layout">
 
@@ -333,7 +318,7 @@ url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fi
         <div style="margin-top:14px; color: white;" class="muted">¿Prefieres mensajería instantánea? Haz clic en WhatsApp para iniciar una conversación inmediata.</div>
       </aside>
 
-      <!-- FORM -->
+         <!-- FORM -->
       <form class="contact-form" id="main-contact-form" aria-label="Formulario de contacto">
         <h3 style="color: #dbe9f8; margin: 1px;">Formulario de Contacto</h3>
         <h4 style="color: #dbe9f8; margin: 1px;">Por favor, completa el siguiente formulario para contactarte y poderte brindar la  mejor atención.</h4>
@@ -342,7 +327,7 @@ url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fi
         <input type="telefono" name=" Tu Numero" placeholder="Numero telefonico o correo electrónico" required class="focus-ring" />
 
           <!-- Selección de tipo de servicio -->
-  <select name="tipo" id="tipo" required class="focus-ring">
+  <center><select name="tipo" id="tipo" required class="focus-ring">
     <option value="">¡ Selecciona tu servicio !</option>
     <option value="soporte">Soporte Técnico</option>
     <option value="informes">Informes y Atención a Clientes</option>
@@ -375,23 +360,14 @@ url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fi
     <option value="puntos_venta">Puntos de Venta</option>
     <option value="camaras_seguridad">Cámaras de Seguridad</option>
     <option value="sistemas_personalizados">personalizaciones</option>
-  </select>
+  </select></center>
 <h3 style="color: #dbe9f8; margin: 1%;">Especificaciones</h3>
         <textarea name="mensaje" placeholder="Especifica detalladamente el problema...El mensaje se guarda para dar seguimiento del problema y poder brindarte un mejor servicio y atención." required class="focus-ring"></textarea>
-
-          <button type="submit"  class="btn-enviar" style="background:#0933b0;">
-    enviar
-  </button>
-
+<!-- BOTÓN DE  ENVIAR -->
+       <center>   <button type="submit"  class="btn-enviar" style="background:#0933b0;">enviar</button>
   <!-- BOTÓN DE WHATSAPP -->
-  <button type="button" id="btn-whatsapp" class="btn-enviar" style="background:#25D366;">
-    WhatsApp
-  </button>
-
-  <div class="muted" style="font-size:13px; color: white;">
-    O envíanos un <a href="https://wa.me/5215610716110" target="_blank">mensaje por WhatsApp</a>
-  </div>
-</div>
+  <button type="button" id="btn-whatsapp" class="btn-enviar" style="background:#25D366;"> WhatsApp </button>
+</div></center>
 
       </form>
 
@@ -410,9 +386,10 @@ url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fi
   </a>
 </div>
 
-  </section>
+  </section></center>
 
-  <script>
+
+    <script>
 function mostrar(id) {
     // Oculta todas
     document.querySelectorAll(".seccion").forEach(function(sec) { sec.classList.remove("visible"); });
@@ -520,28 +497,38 @@ function mostrar(id) {
 
 
 
-
-  /* ============================================================
-        BOTÓN "ENVIAR" NORMAL (BLOQUEADO SI FALTA ALGO)
-  ============================================================ */
-  form.addEventListener('submit', function(e){
+ // -------------------------------
+  //     ENVIAR A GOOGLE SHEETS
+  // -------------------------------
+  form.addEventListener('submit', async function(e){
     e.preventDefault();
 
     const datos = validarFormulario();
-    if(!datos) return; // si hay algo vacío → NO SE MANDA
+    if(!datos) return;
 
     const btn = this.querySelector('.btn-enviar');
     btn.disabled = true;
     btn.textContent = "Enviando...";
 
+    await fetch("https://script.google.com/macros/s/AKfycbzC-iv5rcpsz3nsXVoiu0xkoMDtZetVp3z5IcwsZGOqknLcIWQ8eEDIOZrL6ZMcYCV51g/exec", {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(datos)
+    });
+
     setTimeout(()=>{
-      alert(`✔ Tu mensaje fue enviado correctamente ✔ \nGracias ${datos.nombre} por comunicarte con SYSTEM FLASH.\n 📞 NOS ESTAREMOS PONIENDO EN CONTACTO  A LA BREVEDAD.📞 `);
+      alert(`✔ Tu mensaje fue enviado correctamente ✔ 
+Gracias ${datos.nombre} por comunicarte con SYSTEM FLASH.
+📞 Nos pondremos en contacto a la brevedad.`);
+      
       btn.disabled = false;
       btn.textContent = "Enviar";
-      this.reset();
-      updateFields();
+      form.reset();
     }, 700);
+
   });
+
 
 
 
@@ -579,8 +566,9 @@ ${datos.mensaje}
   });
 
 })();
-</script> 
+</script>  
 
  <footer>  © 2025  SYSTEM FLASH  — Innovación sin límites </footer>
 </body>
 </html>
+
