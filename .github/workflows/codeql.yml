@@ -95,3 +95,5 @@ jobs:
       uses: github/codeql-action/analyze@v4
       with:
         category: "/language:${{matrix.language}}"
+
+        [![.github/workflows/codeql.yml](https://github.com/cr489565-alt/SYSTEMFLASH5/actions/workflows/codeql.yml/badge.svg?event=status)](https://github.com/cr489565-alt/SYSTEMFLASH5/actions/workflows/codeql.yml)
